@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #33383a;
+    --secondary-color: #333333;
+    --text-color: #d4d4c0;
+    --nav-color: #b0e3fc;
+    --hover-color: #d8d803;
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --text-font: 'Mukta', Arial, Helvetica, sans-serif;
+    --title-font: 'Orbitron', Arial, Helvetica, sans-serif;
+    --cyber: polygon(0px 25px,
+            26px 0px,
+            calc(60% - 25px) 0px,
+            60% 25px,
+            100% 25px,
+            100% calc(100% - 10px),
+            calc(100% - 15px) calc(100% - 10px),
+            calc(80% - 10px) calc(100% - 10px),
+            calc(80% - 15px) calc(100% - 0px),
+            10px calc(100% - 0px),
+            0% calc(100% - 10px));
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: normal;
+}
+
+body {
+    background: #181818 url(../img/bg.png);
+    font-family: var(--text-font);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--nav-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--hover-color);
+    outline: none;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--hover-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-font);
+    font-weight: 400;
+}
+
+ul,
+figure,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/*THEME*/
+h1 {
+    font-size: 2.8rem;
+    letter-spacing: 0.4rem;
+}
+
+hr {
+    max-width: 300px;
+    height: 1px;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--text-color);
+    border: none;
+}
+
+h2 {
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+    }
+
+    h2 {
+        letter-spacing: unset;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+/*ACCESSIBILITE*/
+.screen-reader {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.screen-reader-focus:active,
+.screen-reader-focus:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: normal;
+    width: auto;
+}
