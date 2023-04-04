@@ -24,6 +24,15 @@
     <link rel="stylesheet" href="public/css/layout.css" media="screen">
     <link rel="stylesheet" href="public/css/sections.css" media="screen">
     <link rel="stylesheet" href="public/css/components.css" media="screen">
+    <script>
+        window.onscroll = () => {
+            if (scrollY >= 200 && window.matchMedia("(min-width: 680px)").matches) {
+                document.getElementById("page-up").style.display = "block";
+            } else {
+                document.getElementById("page-up").style.display = "none";
+            }
+        };
+    </script>
 </head>
 
 <body class="column" id="contact">
@@ -139,7 +148,10 @@
                 </a>
             </section>
         </section>
-
+        <a class="cybr-btn" href="#" id="page-up">&#8743;
+            <span aria-hidden class="cybr-btn__glitch">&#8743;</span>
+            <span class="screen-reader screen-reader-focus">Remonter en haut de page</span>
+        </a>
     </main>
 
     <footer class="wrapper row-btw" id="main-footer">
