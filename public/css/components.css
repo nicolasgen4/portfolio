@@ -59,6 +59,7 @@ div.card-demo a>svg>path {
 }
 
 #page-up {
+    display: none;
     position: fixed;
     right: 1.8rem;
     bottom: 1.8rem;
