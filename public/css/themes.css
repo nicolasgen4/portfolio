@@ -1,0 +1,73 @@
+/*BODY*/
+.dark {
+    background: var(--dark) url(../images/bg-dark.png);
+    color: var(--light);
+}
+
+.light {
+    background: var(--light) url(../images/bg-light.png);
+    color: var(--dark);
+}
+
+/*LINK*/
+.dark-link {
+    color: var(--light);
+}
+
+.dark-link:hover {
+    color: var(--yellow);
+}
+
+.light-link {
+    color: var(--dark);
+}
+
+.light-link:hover {
+    color: var(--purple);
+}
+
+/*BUTTON*/
+.purple-button {
+    background-color: var(--purple);
+    color: var(--light);
+}
+
+.dark-button {
+    background-color: var(--dark);
+}
+
+/*SVG*/
+.dark-svg {
+    fill: var(--light);
+}
+
+.light-svg {
+    fill: var(--dark);
+}
+
+/*HR*/
+.dark-hr {
+    background-color: var(--light);
+}
+
+.light-hr {
+    background-color: var(--dark);
+}
+
+/*CARD*/
+.dark-card {
+    background-color: var(--dark);
+}
+
+.light-card {
+    background-color: #D6D6D6;
+}
+
+/*CARD TAGS*/
+.dark-tag {
+    border: 1px solid var(--light);
+}
+
+.light-tag {
+    border: 1px solid var(--dark);
+}

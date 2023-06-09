@@ -1,0 +1,98 @@
+.main-nav {
+    gap: 1.4rem;
+    padding: 2rem 0;
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+}
+
+.toggle {
+    width: 24px;
+    height: 24px;
+}
+
+.toggle img {
+    object-fit: unset;
+    max-width: unset;
+    cursor: pointer;
+}
+
+.main-content {
+    gap: 1.2rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    filter: brightness(60%);
+}
+
+.button {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.6rem;
+}
+
+.button:hover {
+    filter: brightness(120%);
+}
+
+.card {
+    display: flex;
+    padding: 1.4rem;
+    gap: 2rem;
+    border-radius: 0.8rem;
+}
+
+.card-infos p {
+    margin: 1.6rem 0;
+}
+
+.card img {
+    object-fit: cover;
+    object-position: top;
+    width: 300px;
+    max-height: 240px;
+}
+
+.tags {
+    gap: 0.4rem;
+}
+
+.tag {
+    display: block;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.tools {
+    padding-left: 1rem;
+    gap: 0.6rem;
+}
+
+.projet .infos {
+    gap: 2.4rem;
+    margin-top: 1.8rem;
+}
+
+.projet .infos section {
+    gap: 1rem;
+}
+
+.projet img {
+    max-height: 480px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0.8rem;
+    margin: 2rem 0;
+}

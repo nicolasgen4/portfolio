@@ -1,0 +1,96 @@
+:root {
+    --dark: #242424;
+    --light: #e2e2e2;
+    --yellow: #d8d803;
+    --purple: rebeccapurple;
+    --font: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: normal;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+hr {
+    width: 300px;
+    max-width: 100%;
+    height: 1px;
+    margin: 4rem 0;
+    border: none;
+    align-self: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+svg:hover {
+    filter: brightness(120%);
+}
+
+footer {
+    gap: 1rem;
+    margin-top: 8rem;
+    margin-bottom: 3.2rem;
+}
+
+/*ACCESSIBILITE*/
+.screen-reader {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.screen-reader-focus:active,
+.screen-reader-focus:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: normal;
+    width: auto;
+}

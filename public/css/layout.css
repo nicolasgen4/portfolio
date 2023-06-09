@@ -1,0 +1,43 @@
+.wrapper {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-btw {
+    justify-content: space-between;
+}
+
+.flex-vcentre {
+    align-items: center;
+}
+
+.flex-hcentre {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-stretch {
+    align-items: stretch;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.gap {
+    gap: 1rem;
+}

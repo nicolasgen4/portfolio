@@ -1,0 +1,22 @@
+#home-img {
+    max-height: 480px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 0.8rem;
+    margin: 2rem 0;
+}
+
+#home-buttons {
+    gap: 1.2rem;
+}
+
+#page-up {
+    display: none;
+    position: fixed;
+    right: 1.8rem;
+    bottom: 1.8rem;
+    width: 70px;
+    height: 40px;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
